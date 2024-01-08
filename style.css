@@ -146,3 +146,38 @@
     .main{
         overflow: hidden; /*For scrollreveal animations*/
     }
+
+    /*========== Header & Navbar ==========*/
+
+    .header {
+        position: fixed;
+        width: 100%;
+        background-color: var(--container-color) ;
+        top: 0;
+        left: 0;
+        z-index: var(--z-fixed);
+    }
+
+    .nav{
+        height: var(--header-height);
+        display: flex;
+        justify-content: space-between ;
+        align-items: center;
+    }
+
+    .nav__logo{
+        color: var(--title-color);
+        font-weight: var(--font-medium);
+    }
+
+    .nav__logo span{
+        color: var(--first-color);
+    }
+
+    .nav__toggle,
+    .nav__close{
+        display: flex;
+        font-size: 1.25rem;
+        color: var(--title-color);
+        cursor: pointer;
+    }
