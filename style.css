@@ -227,3 +227,21 @@
     .show-menu{
         right: 0; 
     }
+
+    /*========== Home ==========*/
+
+    .home{
+        background-color: var(--container-color);
+    }
+
+    .home__container {
+        padding-top: 2rem;
+        row-gap: 2.5rem;
+    }
+
+    .home__content{
+       display: grid;
+       row-gap: 2rem;  
+    }
+
+    
