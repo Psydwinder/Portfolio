@@ -1,4 +1,16 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+
+@font-face {
+    font-family: Mosk;
+    src: url(/Type/Mosk\ Thin\ 100.ttf );
+    src: url(/Type/Mosk\ Extra-Light\ 200.ttf);
+    src: url(/Type/Mosk\ Light\ 300.ttf);
+    src: url(/Type/Mosk\ Normal\ 400.ttf);
+    src: url(/Type/Mosk\ Medium\ 500.ttf);
+    src: url(/Type/Mosk\ Semi-Bold\ 600.ttf);
+    src: url(/Type/Mosk\ Bold\ 700.ttf);
+    src: url(/Type/Mosk\ Extra-Bold\ 800.ttf);
+    src: url(/Type/Mosk\ Ultra-Bold\ 900.ttf);
+  }
 
 /*=============== VARIABLES CSS ===============*/
 :root {
@@ -28,7 +40,7 @@
   
     /*========== Font and typography ==========*/
     /*.5rem = 8px | 1rem = 16px ...*/
-    --body-font: "Poppins", sans-serif;
+    --body-font: "Mosk", sans-serif;
     --biggest-font-size: 2rem;
     --bigger-font-size: 1.25rem;
     --h1-font-size: 1.5rem;
