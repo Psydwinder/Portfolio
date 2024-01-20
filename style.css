@@ -47,15 +47,16 @@
 
     .header {
         position: fixed;
+        height: 75px;
         width: 100%;
-        background-color: yellow;
+        background-color: white;
         top: 0;
         left: 0;
         z-index: 1;
     }
 
     .nav{
-        height: var(--header-height);
+        height: 75px;
         display: flex;
         justify-content: space-between ;
         align-items: center;
@@ -89,7 +90,7 @@
     .nav__close{
         display: flex;
         font-size: 1.25rem;
-        color: var(--title-color);
+        color: #FF7260;
         cursor: pointer;
     }
 
@@ -118,8 +119,9 @@
     }
 
     .nav__link{
-        color: var(--title-color);
-        font-weight: var(--font-medium);
+        font-family: 'Mosk', sans-serif;
+        color: #FF7260;
+        font-weight: medium;
         transition: color 0.4s;    
     }
 
