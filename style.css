@@ -107,7 +107,7 @@
             height: 100%;
             padding: 4.5rem 0 0 3rem;
             backdrop-filter: blur(24px);
-            --webkit-backdrop-filter: blur(24px);
+            -webkit-backdrop-filter: blur(24px);
             transition: right 0.4s;
 
         }
@@ -190,4 +190,27 @@
         letter-spacing: 0.6px;
         color: white;
         
+    }
+
+    .home__social{
+        margin-top: 40px;
+        margin-bottom: 40px;
+        display: flex;
+        justify-content: space-around;
+        
+    }
+
+    .home__social-link{
+        text-align: center;
+        align-items: center;
+        width: 60px;
+        height: 60px;
+        padding-top: 16px;
+        border-radius: 20px;
+        box-shadow:  -10px -10px 19px #FF8070, 10px 10px 19px #F3614E;
+        background-image: linear-gradient(145deg, #FF7260 0%, #EB5643 100%);
+        
+        
+
+         /* fill: linear-gradient(145deg, #FF7260 0%, #EB5643 100%); */
     }
