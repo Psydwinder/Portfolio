@@ -67,9 +67,7 @@
         color: #FF7260;
         text-align: center;
         font-family: 'Mosk',sans-serif;
-        font-size: 20px;
-        font-style: normal;
-        font-weight: 300;
+        font-size: 18px;
         line-height: 85.02px; /* 425.1% */
         letter-spacing: 0.6px;
     }
@@ -209,8 +207,9 @@
         border-radius: 20px;
         box-shadow:  -10px -10px 19px #FF8070, 10px 10px 19px #F3614E;
         background-image: linear-gradient(145deg, #FF7260 0%, #EB5643 100%);
-        
-        
+    }
 
-         /* fill: linear-gradient(145deg, #FF7260 0%, #EB5643 100%); */
+    .home__image{
+        margin: auto;
+        width: 350px;
     }
