@@ -76,7 +76,6 @@
     /*========== Reusable CSS Classes ==========*/
 
     .container{
-        max-width: 1120px;
         margin-inline: 1rem;
     }
 
@@ -84,6 +83,17 @@
         overflow: hidden; /*For scrollreveal animations*/
     }
 
+    .button {
+        display: inline-flex;
+        border-radius: 6px;
+        color: white;
+        font-size: 16px;
+        font-family: 'Mosk', sans-serif;
+        font-weight: 700;
+        justify-content: center; 
+        align-items: center; 
+        
+    }
     /*========== Header & Navbar ==========*/
 
     .header {
@@ -191,7 +201,6 @@
 
     .home__container {
         padding-top: 2rem;
-        row-gap: 2.5rem;
     }
 
     .home__content{
@@ -270,8 +279,12 @@
 
     .about__container {
         padding-top: 2rem;
-        row-gap: 2.5rem;
     }
+
+    .about__data{
+        text-align: center;
+    }
+
 
     .about__title{
         margin-top: 40px;
@@ -285,7 +298,7 @@
 
 
     .about__description{
-        padding: 0 20px 0 20px;
+        padding: 0 30px 0 30px;
         margin-top: 50px;
         text-align: center;
         font-family: 'Mosk',sans-serif;
@@ -296,3 +309,14 @@
         color: white;
         
     }
+
+    .cv__container{
+        width: 180px; 
+        height: 70px; 
+        margin-top: 50px;
+        margin-bottom: 50px; 
+        background: linear-gradient(91deg, #6FDCBF 0%, #44B496 100%); 
+        box-shadow: -10px -10px 19px #8CF3D8, 10px 10px 19px #5ACBAD; 
+    }
+
+  
