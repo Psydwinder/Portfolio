@@ -4,16 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
      <link rel="shortcut icon" href="images/favicon-02.png" type="image/x-icon">
-     <link href="https://cdn.jsdelivr.net/npm/remixicon@3.0.0/fonts/remixicon.css" rel="stylesheet">
      <link rel="stylesheet" href="style.css">
+     <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
      
-    <title>Niete's Portfolio</title> <!--------ALL OF THIS NEEDS CHANGING-->
+    <title>Niete's Portfolio</title> 
 </head>
 <body>
     <header class="header" id="header">
         <nav class="nav container">
             <a href="#" class="nav__logo">
-                Niete <span>Ratilal</span>
+                Niete <span class="outline">Ratilal</span>
             </a>
              <div class="nav__menu" id="nav-menu">
                 <ul class="nav__list">
@@ -39,12 +39,12 @@
                 </ul>
                 
                 <div class="nav__close" id="nav-close">
-                    <i class="ri-close-line"></i>
+                    <iconify-icon icon="material-symbols:close"></iconify-icon>
                 </div>
              </div>
              <div class="nav__toggle" id="nav-toggle">
-                <i class="ri-menu-line"></i>
-             </div>
+                <iconify-icon icon="mdi:hamburger-menu"></iconify-icon>
+            </div>
         </nav>
     </header>
 
@@ -52,33 +52,42 @@
     <main class="main">
     
     <!--=============================================== HOME ==========================================================-->
-        <section class="home section" id="home">
-            <div class="home__container container grid">
+        <section class="home-section" id="home">
+            <div class="home__container container">
                 <div class="home__content">
                     <div class="home__data">
                         <p class="home__title">
-                            Hi, I'm Niete 
+                            Hello World! <br/>I'm <span class="outline-white">Niete</span> 
                         </p>
-                        <h1 class="home__description">I like making <a href="#" class="outline js-fun">fun</a> things with code.
-                        <br> I also <a href="#" class="outline js-design">design</a> & <a href="#" class="outline js-draw">draw</a> when I'm not coding. </h1>
-                        <a href="#contact" class="button">Let's talk</a>
+                        <h1 class="home__description">I like making <br/><a href="#" class="outline-white js-fun">fun</a>, interactive things with code.
+                        <br> I also <a href="#" class="outline-white js-design">design</a><br/> & <a href="#" class="outline-white js-draw">draw</a> when I'm <br/>not coding. </h1>
                     </div>
                     <div class="home__social">
-                        <a href="https://github.com/Psydwinder" target="_blank" class="home__social-link">
-                            <i class="ri-github-fill"></i>
-                        </a>
-                        <a href="https://www.instagram.com/nrdigimation/" target="_blank" class="home__social-link">
-                            <i class="ri-instagram-line"></i>
-                        </a>
-                        <a href="https://www.linkedin.com/in/nieteratilal/" target="_blank" class="home__social-link">
-                            <i class="ri-linkedin-box-line"></i>
-                        </a>
+                        
+                        <div class="home__social-link">
+                            <a href="https://github.com/Psydwinder" target="_blank">
+                                <iconify-icon icon="iconoir:github"  style="color: white;" width="25" height="25"></iconify-icon>
+                            </a>
+                        </div>
+                        
+                        <div class="home__social-link">
+                            <a href="https://www.instagram.com/nrdigimation/" target="_blank">
+                                <iconify-icon icon="iconoir:instagram" style="color: white;" width="25" height="25"></iconify-icon>
+                            </a>
+                        </div>
+                        
+                        <div class="home__social-link">
+                            <a href="https://www.linkedin.com/in/nieteratilal/" target="_blank">
+                                <iconify-icon icon="lucide:linkedin" style="color: white;" width="25" height="25" ></iconify-icon>
+                            </a>
+                        </div>    
+                    
                     </div>
                 </div>
 
                 <div class="home__image">
                     <!---Hexagon image -->
-                    <svg viewBox="0 0 550 591" xmlns="http://www.w3.org/2000/svg">
+                    <svg class="home__blob" viewBox="0 0 550 591" xmlns="http://www.w3.org/2000/svg">
                         <mask id="maskBlob" mask-type="alpha">
                            <path d="M263 47.1782C270.426 42.891 279.574 42.891 287 47.1782L501.157 
                            170.822C508.583 175.109 513.157 183.032 513.157 191.606V438.894C513.157 
@@ -118,16 +127,76 @@
 
     <!--=============================================== ABOUT ==========================================================-->
 
-    <section class="about section" id="about">
-
+    <section class="about-section" id="about">
+        <div class="about__container container">
+            <div class="about__data">
+                <h2 class="about__title">
+                    About <span class="outline-white">me</span>
+                </h2>
+                <p class="about__description">
+                A skilled full stack web developer, with a background in 2D Digital Animation, Digital Marketing and Product Design.<br/> I take pride in creating accessible and user-friendly sites using a variety of tools. Experience of working independently as well as part of a team to build modern Javascript based web applications.
+                </p>
+                
+                    <a href="#" target="_blank" class="cv__container button">
+                        Download my CV
+                    </a>
+    
+            </div>
+        </div>
     </section>
  
-    <!--=============================================== RESUME ==========================================================-->
+    <!--=============================================== SKILLS ==========================================================-->
 
-    <section class="resume-section">
+    <section class="skills-section">
+        <div class="skills__container container">
+            <div class="skills__data">
+                <h2 class="skills__title">
+                    My <span class="outline-white">skills</span>
+                </h2>
+                <p class="skills__description">
+                    These are some of the skills I have cultivated as a developer that I could use to make a difference at your <br/> company.
+                </p>
+                    
+                <ul class="skills__list">
+                    <li><span class="item__number">01. </span>HTML & CSS</li>
+                    <li><span class="item__number">02. </span>Javascript</li>
+                    <li><span class="item__number">03. </span>React</li>
+                    <li><span class="item__number">04. </span>React Native</li>
+                    <li><span class="item__number">05. </span>Next.js</li>
+                    <li><span class="item__number">06. </span>Testing (Cypress & Jest)</li>
+                    <li><span class="item__number">07. </span>Figma</li>
+                    <li><span class="item__number">08. </span>APIs</li>
+                    <li><span class="item__number">09. </span>Pair Programming</li>
+                </ul>
+                
+                <a href="#" target="_blank" class="view__project button">
+                    See projects
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!--=============================================== PROJECTS ==========================================================-->
+
+    <section class="projects-section">
 
     </section>
+
+    <!--=============================================== CONTACT ME ==========================================================-->
+
+    <section class="contact-section">
+
+    </section>
+
     </main>
+    
+    <!--=============================================== FOOTER ==========================================================-->
+
+    <footer>
+        <section class="projects-section">
+    
+        </section>
+        </footer>
     <script src="script.js"></script>
 </body>
 

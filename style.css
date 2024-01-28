@@ -1,78 +1,59 @@
-
 @font-face {
-    font-family: Mosk;
-    src: url(/Type/Mosk\ Thin\ 100.ttf );
-    src: url(/Type/Mosk\ Extra-Light\ 200.ttf);
-    src: url(/Type/Mosk\ Light\ 300.ttf);
-    src: url(/Type/Mosk\ Normal\ 400.ttf);
-    src: url(/Type/Mosk\ Medium\ 500.ttf);
-    src: url(/Type/Mosk\ Semi-Bold\ 600.ttf);
-    src: url(/Type/Mosk\ Bold\ 700.ttf);
-    src: url(/Type/Mosk\ Extra-Bold\ 800.ttf);
-    src: url(/Type/Mosk\ Ultra-Bold\ 900.ttf);
+    font-family: 'Mosk';
+    src: url('/Type/Mosk Thin 100.ttf');
+    font-weight: 100;
+  }
+  
+  @font-face {
+    font-family: 'Mosk';
+    src: url('/Type/Mosk Extra-Light 200.ttf');
+    font-weight: 200;
+  }
+  
+  @font-face {
+    font-family: 'Mosk';
+    src: url('/Type/Mosk Light 300.ttf');
+    font-weight: 300;
+  }
+  
+  @font-face {
+    font-family: 'Mosk';
+    src: url('/Type/Mosk Normal 400.ttf');
+    font-weight: 400;
+  }
+  
+  @font-face {
+    font-family: 'Mosk';
+    src: url('/Type/Mosk Medium 500.ttf');
+    font-weight: 500;
+  }
+  
+  @font-face {
+    font-family: 'Mosk';
+    src: url('/Type/Mosk Semi-Bold 600.ttf');
+    font-weight: 600;
+  }
+  
+  @font-face {
+    font-family: 'Mosk';
+    src: url('/Type/Mosk Bold 700.ttf');
+    font-weight: 700;
+  }
+  
+  @font-face {
+    font-family: 'Mosk';
+    src: url('/Type/Mosk Extra-Bold 800.ttf');
+    font-weight: 800;
+  }
+  
+  @font-face {
+    font-family: 'Mosk';
+    src: url('/Type/Mosk Ultra-Bold 900.ttf');
+    font-weight: 900;
   }
 
-/*=============== VARIABLES CSS ===============*/
-:root {
-    --header-height: 3.5rem;
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
   
-    /*========== Colors ==========*/
-    /*Color mode HSL(hue, saturation, lightness)*/
-    /* 
-        Change favorite color
-        Default: hsl(162, 100%, 40%)
-        Orange: hsl(14, 100%, 65%) - Blue: hsl(210, 100%, 70%)
-        Pink: hsl(356, 100%, 75%) - Purple: hsl(250, 100%, 75%)
-  
-        For more colors visit: https://colors.dopely.top/color-pedia
-        -> Choose any color 
-        -> click on tab (Color Conversion)
-        -> Copy the color mode (HSL)
-    */
-  
-    --hue: 162;
-    --first-color: hsl(var(--hue), 100%, 40%);
-    --first-color-alt: hsl(var(--hue), 56%, 35%);
-    --title-color: hsl(228, 8%, 95%);
-    --text-color: hsl(228, 8%, 65%);
-    --body-color: hsl(228, 15%, 20%);
-    --container-color: hsl(228, 15%, 15%);
-  
-    /*========== Font and typography ==========*/
-    /*.5rem = 8px | 1rem = 16px ...*/
-    --body-font: "Mosk", sans-serif;
-    --biggest-font-size: 2rem;
-    --bigger-font-size: 1.25rem;
-    --h1-font-size: 1.5rem;
-    --h2-font-size: 1.25rem;
-    --h3-font-size: 1rem;
-    --normal-font-size: .938rem;
-    --small-font-size: .813rem;
-    --smaller-font-size: .75rem;
-  
-    /*========== Font weight ==========*/
-    --font-regular: 400;
-    --font-medium: 500;
-    --font-semi-bold: 600;
-  
-    /*========== z index ==========*/
-    --z-tooltip: 10;
-    --z-fixed: 100;
-  }
-  
-  /*========== Responsive typography ==========*/
-  @media screen and (min-width: 1152px) {
-    :root {
-      --biggest-font-size: 4rem;
-      --bigger-font-size: 2rem;
-      --h1-font-size: 2.25rem;
-      --h2-font-size: 1.5rem;
-      --h3-font-size: 1.25rem;
-      --normal-font-size: 1rem;
-      --small-font-size: .875rem;
-      --smaller-font-size: .813rem;
-    }
-  }
 
     /*========== BASE ==========*/
 
@@ -86,26 +67,6 @@
         scroll-behavior: smooth;
     }
 
-    input, textarea, button, body{
-        font-family: var(--body-font);
-        font-size: var(--normal-font-size);
-    }
-
-    body {
-        background-color: var(--body-color);
-        color: var(--text-color);
-    }
-
-    input, textarea,button{
-        outline: none;
-        border: none;
-    }
-
-    h1,h2,h3,h4{
-        color: var(--title-color);
-        font-weight: var(--font-medium);
-    }
-
     ul{
         list-style:none;
     }
@@ -114,83 +75,75 @@
         text-decoration: none;
     }
 
-    img,svg{
-       max-width: 100%;
-       height: auto; 
-    }
-
     /*========== Reusable CSS Classes ==========*/
 
     .container{
-        max-width: 1120px;
-        margin-inline: 1.5rem;
-    }
-
-    .grid {
-        display:grid;
-        gap: 1.5rem;
-    }
-
-    .section{
-        padding-block: 5rem 2rem;
-    }
-
-    .section__title, .section__subtitle{
-        text-align: center;
-        color: var(--title-color);
-        font-weight: var(--font-semi-bold);
-    }
-
-    .section__title{
-        font-size: var(--h1-font-size) ;
-        margin-bottom: 1.5rem;
-    }
-
-    .section__subtitle{
-        font-size: var(--small-font-size);
-        margin-bottom: .25rem;
-    }
-
-    .section__title span{
-        color: var(--first-color);
+        margin-inline: 1rem;
     }
 
     .main{
         overflow: hidden; /*For scrollreveal animations*/
     }
 
+    .button {
+        display: inline-flex;
+        border-radius: 6px;
+        color: white;
+        font-size: 16px;
+        font-family: 'Mosk', sans-serif;
+        font-weight: 700;
+        justify-content: center; 
+        align-items: center; 
+        
+    }
     /*========== Header & Navbar ==========*/
 
     .header {
         position: fixed;
+        height: 75px;
         width: 100%;
-        background-color: var(--container-color) ;
+        background-color: white;
         top: 0;
         left: 0;
-        z-index: var(--z-fixed);
+        z-index: 1;
+        
     }
 
     .nav{
-        height: var(--header-height);
+        height: 75px;
         display: flex;
         justify-content: space-between ;
         align-items: center;
     }
 
     .nav__logo{
-        color: var(--title-color);
-        font-weight: var(--font-medium);
+        color: #FF7260;
+        text-align: center;
+        font-family: 'Mosk',sans-serif;
+        font-size: 18px;
+        font-weight: 900;
+        line-height: 85.02px; /* 425.1% */
+        letter-spacing: 0.6px;
     }
 
-    .nav__logo span{
-        color: var(--first-color);
+    .outline{
+        color: transparent;
+        text-align: center;
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: #FF7260;
+        font-family: 'Mosk',sans-serif;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 900;
+        line-height: 85.02px; /* 425.1% */
+        letter-spacing: 0.6px; 
     }
 
     .nav__toggle,
     .nav__close{
         display: flex;
         font-size: 1.25rem;
-        color: var(--title-color);
+        color: #FF7260;
         cursor: pointer;
     }
 
@@ -206,7 +159,7 @@
             height: 100%;
             padding: 4.5rem 0 0 3rem;
             backdrop-filter: blur(24px);
-            --webkit-backdrop-filter: blur(24px);
+            -webkit-backdrop-filter: blur(24px);
             transition: right 0.4s;
 
         }
@@ -219,18 +172,19 @@
     }
 
     .nav__link{
-        color: var(--title-color);
-        font-weight: var(--font-medium);
+        font-family: 'Mosk', sans-serif;
+        color: white;
+        font-weight: medium;
         transition: color 0.4s;    
     }
 
     .nav__link:hover{
-        color: var(--first-color);
+        color: #FF7260;
     }
 
     .nav__close{
         position: absolute;
-        top: 1rem;
+        top: 1.5rem;
         right: 1.5rem;
     }
 
@@ -242,13 +196,13 @@
 
     /*========== Home ==========*/
 
-    .home{
-        background-color: var(--container-color);
+    .home-section{
+        margin-top: 60px;
+        background-color: #FF7260;
     }
 
     .home__container {
         padding-top: 2rem;
-        row-gap: 2.5rem;
     }
 
     .home__content{
@@ -256,4 +210,182 @@
        row-gap: 2rem;  
     }
 
+    .home__title{
+        margin-top: 75px;
+        text-align: center;
+        font-family: 'Mosk',sans-serif;
+        font-size: 45px;
+        font-style: normal;
+        font-weight: 900;
+        line-height: 45px; /* 125% */
+        letter-spacing: 0.6px;
+        color: white;
+        
+    }
+
+    .outline-white{
+        color: transparent;
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: white;
+    }
     
+    .home__description{
+        
+        margin-top: 50px;
+        text-align: center;
+        font-family: 'Mosk',sans-serif;
+        font-size: 45px;
+        font-style: normal;
+        font-weight: 900;
+        line-height: 55px; /* 125% */
+        letter-spacing: 0.6px;
+        color: white;
+        
+    }
+
+    .home__social{
+        margin-top: 40px;
+        margin-bottom: 40px;
+        display: flex;
+        justify-content: space-around;
+        
+    }
+
+    .home__social-link{
+        text-align: center;
+        align-items: center;
+        width: 60px;
+        height: 60px;
+        padding-top: 16px;
+        border-radius: 20px;
+        box-shadow:  -10px -10px 19px #FF8070, 10px 10px 19px #F3614E;
+        background-image: linear-gradient(145deg, #FF7260 0%, #EB5643 100%);
+    }
+
+    .home__image{
+        text-align: center;
+        padding-bottom: 60px;
+    }
+
+    .home__blob{
+       width: 320px;
+       fill: #FFF5C2; 
+       filter: drop-shadow(0px 13px 18px #ECDD8F);
+    }
+
+        /*========== About ==========*/
+
+    .about-section{
+        background-color: #6FDCBF;
+    }
+
+    .about__container {
+        padding-top: 2rem;
+    }
+
+    .about__data{
+        text-align: center;
+    }
+
+    .about__title{
+        margin-top: 40px;
+        text-align: center;
+        font-family: 'Mosk',sans-serif;
+        font-size: 45px;
+        font-weight: 900;
+        color: white;
+        
+    }
+
+    .about__description{
+        padding: 0 30px 0 30px;
+        margin-top: 50px;
+        text-align: center;
+        font-family: 'Inter',sans-serif;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 35px; /* 125% */
+        letter-spacing: 0.6px;
+        color: white;
+        
+    }
+
+    .cv__container{
+        width: 180px; 
+        height: 70px; 
+        margin-top: 50px;
+        margin-bottom: 50px; 
+        background: linear-gradient(91deg, #6FDCBF 0%, #44B496 100%); 
+        box-shadow: -10px -10px 19px #8CF3D8, 10px 10px 19px #5ACBAD; 
+    }
+
+    /*========== Skills ==========*/
+ 
+    .skills-section{
+        background-color: #3C8EFC;
+    }
+
+    .skills__container {
+        padding-top: 2rem;
+    }
+
+    .skills__data{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+    }
+
+    .skills__title{
+        margin-top: 40px;
+        text-align: center;
+        font-family: 'Mosk',sans-serif;
+        font-size: 45px;
+        font-weight: 900;
+        color: white;
+        
+    }
+
+    .skills__description{
+        padding: 0 30px 0 30px;
+        margin-top: 50px;
+        text-align: center;
+        font-family: 'Inter',sans-serif;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 35px; /* 125% */
+        letter-spacing: 0.6px;
+        color: white; 
+    }
+
+    .item__number{
+        color:#00275C;
+    }
+
+    .skills__list{
+        padding-left:60px;
+        align-items: center;
+        justify-content: center;
+        text-align: left;
+        list-style: none;
+        margin-top: 50px;
+        font-family: 'Inter',sans-serif;
+        font-size: 16px;
+        font-weight: 800;
+        line-height: 35px; /* 125% */
+        color: #ffffff;    
+    }
+
+    .skills__list li{
+        padding-top: 5px;
+    }
+
+    .view__project{
+        width: 180px; 
+        height: 70px; 
+        margin-top: 50px;
+        margin-bottom: 50px; 
+        background: linear-gradient(91deg, #5BA1FF 0%, #2C74D4 100%); 
+        box-shadow: -10px -10px 19px #529CFF, 10px 10px 19px #347CDD; 
+    }
+   
