@@ -51,6 +51,8 @@
     src: url('/Type/Mosk Ultra-Bold 900.ttf');
     font-weight: 900;
   }
+
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
   
 
     /*========== BASE ==========*/
@@ -285,7 +287,6 @@
         text-align: center;
     }
 
-
     .about__title{
         margin-top: 40px;
         text-align: center;
@@ -296,14 +297,13 @@
         
     }
 
-
     .about__description{
         padding: 0 30px 0 30px;
         margin-top: 50px;
         text-align: center;
-        font-family: 'Mosk',sans-serif;
+        font-family: 'Inter',sans-serif;
         font-size: 16px;
-        font-weight: 500;
+        font-weight: 400;
         line-height: 35px; /* 125% */
         letter-spacing: 0.6px;
         color: white;
@@ -319,4 +319,73 @@
         box-shadow: -10px -10px 19px #8CF3D8, 10px 10px 19px #5ACBAD; 
     }
 
-  
+    /*========== Skills ==========*/
+ 
+    .skills-section{
+        background-color: #3C8EFC;
+    }
+
+    .skills__container {
+        padding-top: 2rem;
+    }
+
+    .skills__data{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+    }
+
+    .skills__title{
+        margin-top: 40px;
+        text-align: center;
+        font-family: 'Mosk',sans-serif;
+        font-size: 45px;
+        font-weight: 900;
+        color: white;
+        
+    }
+
+    .skills__description{
+        padding: 0 30px 0 30px;
+        margin-top: 50px;
+        text-align: center;
+        font-family: 'Inter',sans-serif;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 35px; /* 125% */
+        letter-spacing: 0.6px;
+        color: white; 
+    }
+
+    .item__number{
+        color:#00275C;
+    }
+
+    .skills__list{
+        padding-left:60px;
+        align-items: center;
+        justify-content: center;
+        text-align: left;
+        list-style: none;
+        margin-top: 50px;
+        font-family: 'Inter',sans-serif;
+        font-size: 16px;
+        font-weight: 800;
+        line-height: 35px; /* 125% */
+        color: #ffffff;    
+    }
+
+    .skills__list li{
+        padding-top: 5px;
+    }
+
+    .view__project{
+        width: 180px; 
+        height: 70px; 
+        margin-top: 50px;
+        margin-bottom: 50px; 
+        background: linear-gradient(91deg, #5BA1FF 0%, #2C74D4 100%); 
+        box-shadow: -10px -10px 19px #529CFF, 10px 10px 19px #347CDD; 
+    }
+   
