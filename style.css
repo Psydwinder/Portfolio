@@ -472,3 +472,60 @@
     }
 
     /*========== Contact me section ==========*/
+
+    .contact-section{
+        background-color: #272B38;
+    }
+
+   
+    .contacts__title{
+        padding-top: 40px;
+        padding-bottom: 60px;
+        text-align: center;
+        font-family: 'Mosk',sans-serif;
+        font-size: 45px;
+        font-weight: 900;
+        color: white;
+    }
+
+    .contact__form,
+    .contact__group{
+        display: grid;
+        row-gap: 1rem;
+    }
+
+    .contact__form{
+        position: relative;
+    }
+
+    .contact__input{
+        margin: 0 15px;
+        border:none;
+        padding: 1rem 1.25rem;
+        color: white;
+        background-color: #1A2028;
+        border-radius: 10px;
+        font-size: 16px;
+    }
+
+    .contact__form textarea{
+        height: 15rem;
+        resize: none;
+        margin-bottom: 3rem;
+    }
+
+    .contact__button{
+        padding: 20px 0;
+        margin: 0 75px 70px 75px; 
+        background: #6FDCBF; 
+        border: none;
+    }
+
+    .contact__message{
+        position: absolute;
+        left: 1.5rem;
+        bottom: 9.5rem;
+        color: white;
+        font-size: 16px;
+        font-family: 'Inter', sans-serif;
+    }
