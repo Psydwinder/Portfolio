@@ -26,7 +26,7 @@
                     </li>
 
                     <li class="nav__item">
-                        <a href="#resume" class="nav__link">Resume</a>
+                        <a href="#skills" class="nav__link">Skills</a>
                     </li>
 
                     <li class="nav__item">
@@ -147,7 +147,7 @@
  
     <!--=============================================== SKILLS ==========================================================-->
 
-    <section class="skills-section">
+    <section class="skills-section" id="skills">
         <div class="skills__container container">
             <div class="skills__data">
                 <h2 class="skills__title">
@@ -178,7 +178,7 @@
 
     <!--=============================================== PROJECTS ==========================================================-->
 
-    <section class="projects-section">
+    <section class="projects-section" id="projects">
         <div class="projects__container container">
             <div class="projects__data">
                 <h2 class="project__title">
@@ -273,13 +273,22 @@
 
     <!--=============================================== CONTACT ME ==========================================================-->
 
-    <section class="contact-section">
+    <section class="contact-section" id="contact">
         <div class="contacts__container container">
             <div class="contacts__data">
                 <h2 class="contacts__title">
                     Contact <span class="outline-white">me</span>
                 </h2>
-                <form action="" class="contact__me"></form>
+                <form action="" class="contact__form">
+                    <div class="contact__group">
+                        <input type="text" name="user_name" class="contact__input" placeholder="Enter your name" required>
+                        <input type="email" name="email_address" class="contact__input" placeholder="Enter your email" required>
+                    </div>
+
+                    <textarea name="user_project" class="contact__input" placeholder="Enter your message" required></textarea>
+                    <p class="contact__message" id="contact-message"></p>
+                    <button type="submit" class="contact__button button">Send message</button>
+                </form>
             </div>
         </div>
     </section>
