@@ -6,7 +6,7 @@
      <link rel="shortcut icon" href="images/favicon-02.png" type="image/x-icon">
      <link rel="stylesheet" href="style.css">
      <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
-     
+     <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
     <title>Niete's Portfolio</title> 
 </head>
 <body>
@@ -169,7 +169,7 @@
                     <li><span class="item__number">09. </span>Pair Programming</li>
                 </ul>
                 
-                <a href="#" target="_blank" class="view__project button">
+                <a href="#projects" class="view__project button">
                     See projects
                 </a>
             </div>
@@ -278,10 +278,10 @@
             Contact <span class="outline-white">me</span>
         </h2>
         <div class="contacts__container container">
-                <form action="" class="contact__form">
+                <form action="" class="contact__form" id="contact-form">
                     <div class="contact__group">
                         <input type="text" name="user_name" class="contact__input" placeholder="Enter your name" required>
-                        <input type="email" name="email_address" class="contact__input" placeholder="Enter your email" required>
+                        <input type="email" name="user_email" class="contact__input" placeholder="Enter your email" required>
                     </div>
 
                     <textarea name="user_project" class="contact__input" placeholder="Enter your message" required></textarea>
