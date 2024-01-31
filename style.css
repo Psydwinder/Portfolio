@@ -96,6 +96,20 @@
         align-items: center; 
         
     }
+
+
+    #about{
+        scroll-margin-top: 70px ;
+    }
+
+    #skills{
+        scroll-margin-top: 50px ; 
+    }
+    
+    #projects{
+        scroll-margin-top: 70px ; 
+    }
+    
     /*========== Header & Navbar ==========*/
 
     .header {
