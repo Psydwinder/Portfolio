@@ -55,7 +55,7 @@
   @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
   
 
-    /*========== BASE ==========*/
+/*========== BASE ==========*/
 
     *{
         box-sizing: border-box;
@@ -75,7 +75,7 @@
         text-decoration: none;
     }
 
-    /*========== Reusable CSS Classes ==========*/
+/*========== Reusable CSS Classes ==========*/
 
     .container{
         margin-inline: 1rem;
@@ -113,6 +113,7 @@
     #contact{
         scroll-margin-top:75px;
     }
+
     /*========== Header & Navbar ==========*/
 
     .header {
@@ -164,7 +165,7 @@
         cursor: pointer;
     }
 
-    /*========== Media queries for Mobile devices ==========*/
+/*========== Media queries for Mobile devices ==========*/
 
     @media screen and (max-width: 1023px){
         .nav__menu{
@@ -172,10 +173,10 @@
             top: 0;
             right: -100%;
             background-color: white;
-            width: 60%;
+            width: 40%;
             height: 100%;
             padding: 4.5rem 0 0 3rem;
-            transition: right 0.4s;
+            transition: right 0.4s ease-in-out;
 
         }
     }
@@ -184,6 +185,7 @@
         display: flex;
         flex-direction: column;
         row-gap: 3rem;
+        text-align: center;
     }
 
     .nav__link{
@@ -193,8 +195,7 @@
 
     .nav__link:hover{
         color:white;   
-        padding: 20px 100% 20px 20px;
-        margin: -10px;
+        padding: 20px 80px;
         border-radius: 10px;
     }
 
@@ -226,7 +227,7 @@
         right: 0; 
     }
 
-    /*========== Home ==========*/
+/*========== Home ==========*/
 
     .home-section{
         margin-top: 60px;
@@ -305,7 +306,7 @@
        filter: drop-shadow(0px 13px 18px #ECDD8F);
     }
 
-        /*========== About ==========*/
+/*========== About ==========*/
 
     .about-section{
         background-color: #6FDCBF;
@@ -351,7 +352,7 @@
         box-shadow: -10px -10px 19px #8CF3D8, 10px 10px 19px #5ACBAD; 
     }
 
-    /*========== Skills ==========*/
+/*========== Skills ==========*/
  
     .skills-section{
         background-color: #3C8EFC;
@@ -394,23 +395,43 @@
         color:#00275C;
     }
 
-    .skills__list{
-        padding-left:60px;
-        align-items: center;
+
+    .skills__content,
+    .skills__group{
+        display: grid;
+    }
+
+    .skills__content{
+        grid-template-columns: repeat(2, max-content);
+        column-gap: 4rem;
         justify-content: center;
+        text-align: center;
+    }
+
+
+    .skills__list{
+        padding-left: 50px;
         text-align: left;
-        list-style: none;
+        list-style: decimal-leading-zero;
         margin-top: 50px;
+        
+        
+    }
+
+    .skills__item{
         font-family: 'Inter',sans-serif;
         font-size: 16px;
         font-weight: 800;
-        line-height: 35px; /* 125% */
-        color: #ffffff;    
+        color: #ffffff; 
+        padding-top:10px;
     }
 
-    .skills__list li{
-        padding-top: 5px;
+    .skills__item::marker{
+        color: #00275C;
     }
+
+
+    
 
     .view__project{
         width: 180px; 
@@ -421,7 +442,7 @@
         box-shadow: -10px -10px 19px #529CFF, 10px 10px 19px #347CDD; 
     }
    
-     /*========== Projects ==========*/
+/*========== Projects ==========*/
 
      .projects-section{
         background-color: #928FF2;
@@ -503,7 +524,7 @@
         margin-bottom: 75px;
     }
 
-    /*========== Contact me section ==========*/
+/*========== Contact me section ==========*/
 
     .contact-section{
         background-color: #272B38;
@@ -562,7 +583,7 @@
         font-family: 'Inter', sans-serif;
     }
 
-    /*================== Footer ========================*/
+/*================== Footer ========================*/
 
     .footer__container{
         background-color: #FF7260;
@@ -616,7 +637,7 @@
         padding-bottom: 20px;
     }
 
-    /*=============== Scroll Bar ======================*/
+/*=============== Scroll Bar ======================*/
 
     ::-webkit-scrollbar{
         width: 0.6rem;
@@ -633,7 +654,7 @@
         background-color: hsl(228,8%, 45%);
     }
 
-    /*=============== Scroll Up ======================*/
+/*=============== Scroll Up ======================*/
 
     .scrollup{
         position: fixed;
@@ -652,8 +673,36 @@
         transform: translateY(-.25rem);
     }
 
-    /*=============== Show scroll Up ======================*/
+/*=============== Show scroll Up ======================*/
 
     .show-scroll{
         bottom:3rem;
     }
+
+/*=============== Media queries ======================*/
+
+@media screen and (max-width: 508px){
+    .skills__content{
+        grid-template-columns: max-content;
+        padding-top: 40px;
+    }
+
+    .skills__list{
+        margin-top: 0;
+    }
+}
+
+
+
+
+
+@media screen and (min-width: 576px){
+    .home__container, 
+    .about__container, 
+    .skills__container,
+    .projects__container,
+    .contact__container{
+        grid-template-columns: 360px;
+        justify-content: center;
+    }
+}
