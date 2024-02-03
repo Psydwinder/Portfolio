@@ -177,7 +177,6 @@
             height: 100%;
             padding: 4.5rem 0 0 3rem;
             transition: right 0.4s ease-in-out;
-
         }
     }
 
@@ -238,9 +237,9 @@
         padding-top: 2rem;
     }
 
-    .home__content{
-       display: grid;
-       row-gap: 2rem;  
+    .home_content{
+        display: grid;
+        row-gap: 2rem;  
     }
 
     .home__title{
@@ -279,8 +278,9 @@
     .home__social{
         margin-top: 40px;
         margin-bottom: 40px;
-        display: flex;
-        justify-content: space-around;
+        display: grid;
+        grid-template-columns: repeat(3,100px);
+        justify-content: center;
         
     }
 
@@ -291,8 +291,12 @@
         height: 60px;
         padding-top: 16px;
         border-radius: 20px;
-        box-shadow:  -10px -10px 19px #FF8070, 10px 10px 19px #F3614E;
         background-image: linear-gradient(145deg, #FF7260 0%, #EB5643 100%);
+    }
+
+    .home__social-link:hover{
+        box-shadow:  -10px -10px 19px #FF8070, 10px 10px 19px #F3614E;
+
     }
 
     .home__image{
@@ -692,10 +696,6 @@
     }
 }
 
-
-
-
-
 @media screen and (min-width: 576px){
     .home__container, 
     .about__container, 
@@ -706,3 +706,85 @@
         justify-content: center;
     }
 }
+
+@media screen and (min-width: 1023px){
+    
+    .home__container{
+        display: flex;
+        align-items: center;
+    }
+
+    .home__title{
+        margin-top: 50px;
+        text-align: left;
+        font-family: 'Mosk',sans-serif;
+        font-size: 50px;
+        font-style: normal;
+        font-weight: 900;
+        line-height: 55px; /* 125% */
+        letter-spacing: 0.6px;
+        color: white;  
+    }
+    
+    .home__description{
+        margin-top: 50px;
+        width:500px;
+        text-align: left;
+        font-family: 'Mosk',sans-serif;
+        font-size: 50px;
+        font-style: normal;
+        font-weight: 900;
+        line-height: 55px; /* 125% */
+        letter-spacing: 0.6px;
+        color: white;    
+    }
+
+    .nav__logo{
+        color: #FF7260;
+        text-align: center;
+        font-family: 'Mosk',sans-serif;
+        font-size: 25px;
+        font-weight: 900;
+        letter-spacing: 0.6px;
+    }
+
+    .outline{
+        color: transparent;
+        text-align: center;
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: #FF7260;
+        font-family: 'Mosk',sans-serif;
+        font-size: 25px;
+        font-style: normal;
+        font-weight: 900;
+        letter-spacing: 0.6px; 
+    }
+
+    .nav__list{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .nav__item{
+        padding-left:50px;
+    }
+
+    .nav__toggle,
+    .nav__close{
+        display: none;
+    }
+
+    .nav__link{
+        font-weight: 400;
+        color: #1A2028;
+    }
+
+    .nav__link:hover{
+        color:white;   
+        padding: 20px;
+        border-radius: 10px;
+    }
+
+
+}
+
