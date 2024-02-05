@@ -709,30 +709,37 @@
 
 @media screen and (min-width: 1023px){
     
+    .header{
+        background-color: transparent;
+    }
+
+    .home-section{
+        margin-top: 0px;
+        background-color: #FF7260;
+        width:70vw;
+    }
+
     .nav__logo{
-        color: #FF7260;
-        text-align: center;
+        color: white;
         font-family: 'Mosk',sans-serif;
         font-size: 25px;
         font-weight: 900;
-        letter-spacing: 0.6px;
     }
 
     .outline{
         color: transparent;
-        text-align: center;
-        -webkit-text-stroke-width: 1px;
-        -webkit-text-stroke-color: #FF7260;
+        -webkit-text-stroke-width: 0.5px;
+        -webkit-text-stroke-color: white;
         font-family: 'Mosk',sans-serif;
         font-size: 25px;
         font-style: normal;
         font-weight: 900;
-        letter-spacing: 0.6px; 
     }
 
     .nav__list{
         display: flex;
         flex-direction: row;
+        padding-right:20px;
     }
 
     .nav__item{
@@ -745,8 +752,10 @@
     }
 
     .nav__link{
-        font-weight: 400;
+        font-size: 14px;
+        font-weight: 600;
         color: #1A2028;
+        text-transform: uppercase;
     }
 
     .nav__link:hover{
@@ -754,6 +763,8 @@
         padding: 20px;
         border-radius: 10px;
     }
+
+
 
     .home__container{
         display: flex;
