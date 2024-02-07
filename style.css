@@ -355,8 +355,15 @@
         height: 70px; 
         margin-top: 50px;
         margin-bottom: 50px; 
-        background: linear-gradient(91deg, #6FDCBF 0%, #44B496 100%); 
+        background: linear-gradient(145deg, #6FDCBF 0%, #44B496 100%); 
         box-shadow: -10px -10px 19px #8CF3D8, 10px 10px 19px #5ACBAD; 
+        transition: width 0.6s;
+    }
+
+
+    .cv__container:hover{ 
+        background: linear-gradient(145deg, #9efae2 0%, #33c79f 100%);   
+        width: 400px;  
     }
 
 /*========== Skills ==========*/
