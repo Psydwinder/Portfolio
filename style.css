@@ -405,11 +405,6 @@
         color: white; 
     }
 
-    .item__number{
-        color:#00275C;
-    }
-
-
     .skills__content,
     .skills__group{
         display: grid;
@@ -444,16 +439,18 @@
         color: #00275C;
     }
 
-
-    
-
     .view__project{
         width: 180px; 
         height: 70px; 
-        margin-top: 50px;
-        margin-bottom: 50px; 
-        background: linear-gradient(91deg, #5BA1FF 0%, #2C74D4 100%); 
-        box-shadow: -10px -10px 19px #529CFF, 10px 10px 19px #347CDD; 
+        margin: 50px 0; 
+        background: linear-gradient(145deg, #5BA1FF 0%, #2C74D4 100%); 
+        box-shadow: -10px -10px 19px #529CFF, 10px 10px 19px #347CDD;
+        transition: width 0.4s; 
+    }
+
+    .view__project:hover{
+        background: linear-gradient(145deg, #a3cbff 0%, #63a5fa 100%);
+        width: 300px;
     }
    
 /*========== Projects ==========*/
@@ -740,6 +737,8 @@
         font-weight: 900;
     }
 
+    
+
     .nav__list{
         display: flex;
         flex-direction: row;
@@ -859,8 +858,67 @@
         margin-top: 30px;
     }
 
+    .skills-section{
+        padding-left: 50px;
+    }
+
+
+    .skills__data{
+        display: flex;
+        flex-wrap: wrap;
+        width:400px;
+        height: 500px;
+    }
+
+    .skills__title{
+        margin-top: 40px;
+        font-size: 60px;
+        text-align: left;
+        
+    }
+
+    .skills__description{
+        text-align: center;
+        width: 100%;
+        padding-left: 35px;
+    }    
     
-    
+
+    .skills__content,
+    .skills__group{
+        display: grid;
+    }
+
+    .skills__content{
+        padding-left: 50px;
+        grid-template-columns: repeat(2, max-content);
+        column-gap: 4rem;
+        justify-content: center;
+        text-align: center;
+    }
+
+
+    .skills__list{
+        padding-left: 50px;
+        text-align: left;
+        list-style: decimal-leading-zero;
+        margin-top: 100px;
+        
+        
+    }
+
+    .skills__item{
+        font-size: 14px;
+        padding-top:1.75rem;
+    }
+
+    .view__project{
+        width: 180px; 
+        height: 70px; 
+        margin: 50px 0;
+         
+    }
+
 
     .projects__data{
         display: grid;
