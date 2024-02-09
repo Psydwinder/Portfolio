@@ -924,7 +924,7 @@
         display: grid;
         grid-template-columns: auto auto auto;
     }
-
+    /*-------------- More annotation -----------------------------*/
     .projects__data div:nth-of-type(6){
         margin-bottom: 20px;
     }
