@@ -500,11 +500,15 @@
          transition: bottom .4s ;
      }
 
-     .projects__subtitle{
+     .projects__subtitle,
+     .projects__title{
         font-family: 'Inter',sans-serif;
+        color: white;
+     }
+
+     .projects__subtitle{
         font-size: 16px;
         font-weight: 600;
-        color: white;
      }
 
     /* .projects__card{
@@ -647,9 +651,11 @@
     }
 
     .footer__social{
-        margin: 30px 20px 30px 20px;
-        display: flex;
-        justify-content: space-around;
+        margin-top: 40px;
+        margin-bottom: 40px;
+        display: grid;
+        grid-template-columns: repeat(3,100px);
+        justify-content: center;
         
     }
 
@@ -659,10 +665,15 @@
         width: 60px;
         height: 60px;
         padding-top: 16px;
-        border-radius: 20px;
-        box-shadow:  -10px -10px 19px #FF8070, 10px 10px 19px #F3614E;
+        border-radius: 10px;
         background-image: linear-gradient(145deg, #FF7260 0%, #EB5643 100%);
+        box-shadow:  -10px -10px 19px #FF8070, 10px 10px 19px #F3614E;
     }
+
+    .footer__social-link:hover{
+        background-image: linear-gradient(145deg, #ffc4bc 0%, #ff553f 100%);
+    }
+
 
     .footer__copy{
         color: #FFFFFF;
@@ -946,7 +957,6 @@
          
     }
 
-    /*--------------This whole section needs to be amended--------*/
     .projects__container{
         display: grid;
         grid-template-columns: auto auto;
@@ -969,7 +979,6 @@
         margin-bottom: 20px;
     } */
 
-    /*-------------- More annotation -----------------------------*/
     .projects__data div:nth-of-type(6){
         margin-bottom: 20px;
     }
