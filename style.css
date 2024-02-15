@@ -55,7 +55,7 @@
   @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
   
 
-/*========== BASE ==========*/
+/*=================================================================================== BASE ================================================================================*/
 
     *{
         box-sizing: border-box;
@@ -75,7 +75,7 @@
         text-decoration: none;
     }
 
-/*========== Reusable CSS Classes ==========*/
+/*============================================================================= REUSABLE CSS CLASSES ==========================================================================*/
 
     .container{
         margin-inline: 1rem;
@@ -114,7 +114,7 @@
         scroll-margin-top:75px;
     }
 
-    /*========== Header & Navbar ==========*/
+ /*================================================================================ HEADER & NAVBAR =============================================================================*/
 
     .header {
         position: fixed;
@@ -220,13 +220,13 @@
         right: 1.5rem;
     }
 
-    /*Show menu*/
+    /*=================================================================================== SHOW MENU ================================================================================*/
 
     .show-menu{
         right: 0; 
     }
 
-/*========== Home ==========*/
+/*=================================================================================== HOME ================================================================================*/
 
     .home-section{
         margin-top: 60px;
@@ -310,7 +310,7 @@
        filter: drop-shadow(0px 13px 18px #ECDD8F);
     }
 
-/*========== About ==========*/
+/*=================================================================================== ABOUT ================================================================================*/
 
     .about-section{
         background-color: #6FDCBF;
@@ -366,7 +366,7 @@
         width: 400px;  
     }
 
-/*========== Skills ==========*/
+/*=================================================================================== SKILLS ================================================================================*/
  
     .skills-section{
         background-color: #3C8EFC;
@@ -415,19 +415,25 @@
         column-gap: 4rem;
         justify-content: center;
         text-align: center;
+        padding-bottom: 60px;
     }
 
 
     .skills__list{
-        padding-left: 50px;
+        margin-left:auto;
+        margin-right:auto;
+        text-align: left;
+        list-style: decimal-leading-zero;     
+    }
+
+    .skills__list2{
+        padding-left: 100px;
         text-align: left;
         list-style: decimal-leading-zero;
-        padding-bottom: 60px;
-        
-        
     }
 
     .skills__item{
+        
         font-family: 'Inter',sans-serif;
         font-size: 16px;
         font-weight: 800;
@@ -442,7 +448,7 @@
     .view__project{
         width: 180px; 
         height: 70px; 
-        margin: 50px 0; 
+        margin: 50px 0 0 0; 
         background: linear-gradient(145deg, #5BA1FF 0%, #2C74D4 100%); 
         box-shadow: -10px -10px 19px #529CFF, 10px 10px 19px #347CDD;
         transition: width 0.4s; 
@@ -453,7 +459,7 @@
         width: 300px;
     }
    
-/*========== Projects ==========*/
+/*=================================================================================== PROJECTS ================================================================================*/
 
      .projects-section{
         background-color: #928FF2;
@@ -462,8 +468,10 @@
 
     .projects__container{
         display: grid;
-        grid-template-columns: auto auto;
+        grid-template-columns: auto;
         align-items: center;
+        text-align: center;
+        padding-bottom: 60px;
         
     }
 
@@ -533,15 +541,6 @@
         bottom:0;
      }
 
-    /* .projects__card{
-        width: 320px; 
-        height: 400px; 
-        background: #6965CE; 
-        border-radius: 20px;
-        text-align: center;
-        margin-bottom: 20px;
-    } */
-
     .projects__img{
         width: 400px; 
         height: 280px;
@@ -588,7 +587,7 @@
         margin-bottom: 75px;
     }
 
-/*========== Contact me section ==========*/
+/*=================================================================================== CONTACT ME ================================================================================*/
 
     .contact-section{
         background-color: #272B38;
@@ -629,25 +628,29 @@
         height: 15rem;
         resize: none;
         margin-bottom: 3rem;
-    }
-
-    .contact__button{
-        padding: 20px 0;
-        margin: 0 75px 70px 75px; 
-        background: #6FDCBF; 
-        border: none;
-    }
-
-    .contact__message{
-        position: absolute;
-        left: 1.5rem;
-        bottom: 9.5rem;
         color: white;
         font-size: 16px;
         font-family: 'Inter', sans-serif;
     }
 
-/*================== Footer ========================*/
+    .contact__button{
+        padding: 20px 0;
+        margin: 0 75px 70px 75px; 
+        background-image: linear-gradient(145deg, #a7f3df 0%, #219e7d 100%);
+        border: none;
+    }
+
+    .contact__button:hover{
+        box-shadow:  -5px -5px 20px #b3fce8, 5px 5px 20px #269477;    }
+
+    .contact__message{
+        position: absolute;
+        left: 1.5rem;
+        bottom: 9.5rem;
+        
+    }
+
+/*=================================================================================== FOOTER ================================================================================*/
 
     .footer__container{
         background-color: #FF7260;
@@ -708,7 +711,7 @@
         padding-bottom: 20px;
     }
 
-/*=============== Scroll Bar ======================*/
+/*=================================================================================== SCROLL BAR ================================================================================*/
 
     ::-webkit-scrollbar{
         width: 0.6rem;
@@ -725,7 +728,7 @@
         background-color: hsl(228,8%, 45%);
     }
 
-/*=============== Scroll Up ======================*/
+/*=================================================================================== SCROLL UP ================================================================================*/
 
     .scrollup{
         position: fixed;
@@ -744,13 +747,13 @@
         transform: translateY(-.25rem);
     }
 
-/*=============== Show scroll Up ======================*/
+/*================================================================================== SHOW SCROLL UP ==============================================================================*/
 
     .show-scroll{
         bottom:3rem;
     }
 
-/*=============== Media queries ======================*/
+/*================================================================================== MEDIA QUERIES ==============================================================================*/
 
 @media screen and (max-width: 508px){
     .skills__content{
@@ -992,18 +995,64 @@
         font-size: 60px;
     }
 
-    /* .projects__card{
-        width: 100px; 
-        height: 400px; 
-        background: #6965CE; 
-        border-radius: 20px;
-        text-align: center;
-        margin-bottom: 20px;
-    } */
-
-    .projects__data div:nth-of-type(6){
-        margin-bottom: 20px;
+    .contacts__title{
+        font-size: 60px;
     }
+
+   
+
+    .contact__form,
+    .contact__group{
+        
+        display: grid;
+        row-gap: 1rem;
+    }
+
+    .contact__group{
+        padding: 0 100px;
+        grid-template-columns: auto auto;
+    }
+
+    .contact__form{
+        position: relative;
+    }
+
+    .contact__input{
+        margin: 0 15px;
+        border:none;
+        padding: 1rem 1.25rem;
+        color: white;
+        background-color: #1A2028;
+        border-radius: 10px;
+        font-size: 16px;
+        font-family: 'Inter', sans-serif;
+    }
+
+    .contact__form textarea{
+        height: 15rem;
+        resize: none;
+        margin: 0 115px 60px 115px;
+    }
+
+    .contact__button{
+        margin-left: auto;
+        margin-right: auto;
+        padding: 20px 0;
+        width: 200px; 
+        background-image: linear-gradient(145deg, #393f47 0%, #1A2028 100%);
+        border: none;
+    }
+
+    .contact__button:hover{
+        box-shadow:  -5px -5px 20px #51575f, 5px 5px 20px #262b33;    }
+
+    .contact__message{
+        position: absolute;
+        left: 1.5rem;
+        bottom: 9.5rem;
+        
+    }
+    
 
     
 
