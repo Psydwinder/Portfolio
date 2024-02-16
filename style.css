@@ -78,7 +78,8 @@
 /*============================================================================= REUSABLE CSS CLASSES ==========================================================================*/
 
     .container{
-        margin-inline: 1rem;
+        max-width: 1120px;;
+        margin-inline: 1.5rem;
     }
 
     .main{
@@ -467,15 +468,6 @@
         padding-top: 10px;
     }
 
-    .projects__container{
-        display: grid;
-        grid-template-columns: auto;
-        align-items: center;
-        text-align: center;
-        padding-bottom: 60px;
-        
-    }
-
     .project__title{
         margin-top: 40px;
         margin-bottom: 60px;
@@ -487,6 +479,23 @@
         
     }
 
+    .projects__container{
+        display: grid;
+        row-gap: 1rem;
+        text-align: center;
+        justify-content: center;
+        padding-block:1rem;
+    }
+    /* .projects__container{
+        display: grid;
+        grid-template-columns: auto;
+        align-items: center;
+        text-align: center;
+        padding-bottom: 60px;
+        
+    } */
+
+
     .projects__card{
         position: relative;
         border-radius: 20px;
@@ -495,10 +504,10 @@
  
      .projects__modal{
          position: absolute;
-         left:18.5px;
+         left:0;
          bottom:-100%;
-         width: 90%; 
-        height: 280px;
+         width: 100%; 
+        height: 100%;
          background: linear-gradient(0deg, rgba(72,70,135,1) 0%, rgba(146,143,242,0.5012165450121655) 50%, rgba(146,143,242,0) 100%);    
          border-radius: 20px;
          display: flex;
@@ -542,10 +551,8 @@
      }
 
     .projects__img{
-        width: 90%; 
-        height: 280px;
-        margin-top: 10px; 
-        border-radius: 20px;
+        width: 100%; 
+        height: 100%;
         text-align: center;
     }
 
@@ -583,7 +590,7 @@
         
     }
 
-    .projects__data div:nth-of-type(6){
+    .projects__card:nth-of-type(6){
         margin-bottom: 75px;
     }
 
