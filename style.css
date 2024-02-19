@@ -590,6 +590,8 @@
         
     }
 
+    /*Need to add media queries for larger devices */
+
     .projects__card:nth-of-type(6){
         margin-bottom: 75px;
     }
